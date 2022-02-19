@@ -1,0 +1,38 @@
+body {
+  background-color: #5b5b5b;
+}
+
+
+.project {
+    display: flex;
+    
+    justify-content: space-around;
+    
+    
+    
+    margin: 10% 10% 10% 10%;
+    
+    
+    
+}
+
+#intro {
+    margin-left: 10%;
+}
+
+p {
+    color: white;
+    
+    
+    font-size: 18px;
+    
+    font-family: monospace;
+}
+
+
+
+img {
+    width: 50%;
+    
+    height: 50%;
+}
