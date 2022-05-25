@@ -1,0 +1,72 @@
+  /* Boilerplate */
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: #5b5b5b;
+  }
+  /* Text Formatting */
+  p {
+    color: white;
+    font-size: 1.125rem;
+    font-family: monospace;
+  }
+  /* Main Styles */
+
+  img {
+    width: 50%;
+    height: 50%;
+  }
+
+  #navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #4b4b4b;
+    height: 50px;
+    text-decoration: none;
+  }
+
+  .project {
+    display: flex;
+    justify-content: space-around;
+    margin: 10% 10% 10% 10%;
+  }
+
+  #projects_nav a {
+    color: white;
+    padding: 15px 10px 0px 10px;
+    display: block;
+    height: 35px;
+    text-decoration-line: none;
+  }
+  
+  #projects_nav a:hover {
+    color: black;
+    background: aliceblue;
+  }
+  
+  #projects_nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    background: #4b4b4b;
+  }
+  
+  #project1 p {
+    text-align: right;
+  }
+  
+  #project2 p {
+    text-align: left;
+  }
+
+  #intro {
+    margin-left: 10%;
+  }
+  
+  #intro p {
+    font-size: 2.25rem;
+  }
+  
