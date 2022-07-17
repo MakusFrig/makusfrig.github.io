@@ -1,10 +1,9 @@
-
 var states = [];
 
 
 
-
-for (var i = 0; i < 9; i++) {
+var i;
+for (i = 0; i < 9; i++) {
 
 	states[i] = 0;
 
@@ -30,7 +29,7 @@ function catch_states() {
 
 
 
-	for (var i = 0; i <  states.length; i++) {
+	for (var i = 0; i < states.length; i++) {
 
 		if (states[i] >= 3) {
 			states[i] = 0;
@@ -44,8 +43,8 @@ function catch_states() {
 function change_state(n) {
 
 	states[n] += 1;
-	states[n-1] += 1;
-	states[n-2] += 1;
+	states[n - 1] += 1;
+	states[n - 2] += 1;
 
 
 
@@ -63,7 +62,7 @@ function change_state(n) {
 
 	var win = true;
 
-	for (var i = 1; i < states.length-1; i++) {
+	for (var i = 1; i < states.length - 1; i++) {
 		if (states[i] != 2) {
 			win = false;
 			break;
@@ -81,19 +80,19 @@ function change_state(n) {
 
 function set_buttons() {
 
-	
+
 
 	for (var i = 0; i < buttons.length; i++) {
 
-		buttons[i].setAttribute("src", num_to_state(states[i+1]));
+		buttons[i].setAttribute("src", num_to_state(states[i + 1]));
 
-		buttons[i].setAttribute("onclick", "change_state('"+(parseInt(buttons[i].id[1])+1)+"');");
+		buttons[i].setAttribute("onclick", "change_state('" + (parseInt(buttons[i].id[1]) + 1) + "');");
 	}
 	return;
 }
 
 function random_number() {
-	return Math.floor(Math.random() * 8)+1;
+	return Math.floor(Math.random() * 8) + 1;
 }
 
 
@@ -105,11 +104,11 @@ function generate() {
 
 		//this loop is just so we rly mix thing sup
 
-		var g = random_number()+1;
+		var g = random_number() + 1;
 
 		states[g] += 1;
-		states[g-1] += 1;
-		states[g-2] += 1;
+		states[g - 1] += 1;
+		states[g - 2] += 1;
 
 
 

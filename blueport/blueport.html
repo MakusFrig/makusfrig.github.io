@@ -1,114 +1,76 @@
 <!DOCTYPE html>
-<html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>BluePort</title>
-        <meta name="description" content="">
-        <link rel="stylesheet" href="blueport_main.css">
-
-
-    </head>
-
-    <body>
-        <div id="topbar">
-
-            <form action="https://github.com/MakusFrig">
-                <input type="image" value="Go to Github" src="imgs/github.svg">
-            </form>
-            
-
-            
-            <input type="image" src="imgs/question.svg" value="Open Rules" onclick="open_rules();">
-            
-
-        </div>
-        <div id="topscreen">
-            <p id="title">
-                Blue Port
-            </p>
-            <p id="won">
-                
-            </p>
-            
-
-        </div>
-        <input type="image" src="imgs/generate.svg" id="generatebutton" value="Regenerate" onclick="generate();">
-        
-        <div id="overlay"></div>
-        <div id="popup">
-            <div class="popupcontrols">
-                <input type="image" id="popupclose" src="imgs/close.svg" value="Close Rules" onclick="close_rules();">
-            </div>
-            <div class="popupcontent">
-                <p>
-                    How to Play:<br><br>Click on a square to change it's state<br><br>It will also change the states of the two adjacent<br><br> They change in cycles. Red -> Green -> Blue -> Red<br><br>Get all 7 boxes in the blue state to win!
-                </p>
-            </div>
-        </div>
-        <script>
-            // Initialize Variables
-            var closePopup = document.getElementById("popupclose");
-            var overlay = document.getElementById("overlay");
-            var popup = document.getElementById("popup");
-
-
-            // Close Popup Event
-            function close_rules() {
-                overlay.style.display = 'none';
-                popup.style.display = 'none';
-            };
-            function open_rules() {
-              overlay.style.display = 'block';
-              popup.style.display = 'block';
-            }
-            
-            close_rules();
-            
-            
-        </script>
-
-        
-
-
-        <div id="buttons">
-            <input id="b1" class="button" type="image">
-            <input id="b2" class="button" type="image">
-            <input id="b3" class="button" type="image">
-            <input id="b4" class="button" type="image">
-            <input id="b5" class="button" type="image">
-            <input id="b6" class="button" type="image">
-            <input id="b7" class="button" type="image">
-            
-        </div>
-        <script>
-            let msg = document.getElementById("listener");
-            
-            document.addEventListener("keypress", (event) => {
-                if (parseInt(event.key) != NaN) {
-                    var number = parseInt(event.key);
-                    
-                    if (number >=1 && number <= 7) {
-                        change_state(number+1);
-                    }
-                }
-                
-            });
-            
-            
-        </script>
-
-        
-        <script src = "blueport_main.js"></script>
-        
-        
-        
-        <p id="credit">
-            Markus Frigaard 2022
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>BluePort</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="blueport_main.css" />
+  </head>
+  <body>
+    <div id="topbar">
+      <form action="https://github.com/MakusFrig">
+        <input type="image" name="Go to Github" src="imgs/github.svg" alt="Link to GitHub" />
+      </form>
+      <input type="image" src="imgs/question.svg" name="Open Rules" onclick="open_rules();" alt="Open Rules Button" />
+    </div>
+    <div id="topscreen">
+      <p id="title">Blue Port</p>
+      <p id="won"></p>
+    </div>
+    <input type="image" src="imgs/generate.svg" id="generatebutton" name="Regenerate" onclick="generate();" alt="Regenerate Button" />
+    <div id="overlay"></div>
+    <div id="popup">
+      <div class="popupcontrols">
+        <input type="image" id="popupclose" src="imgs/close.svg" name="Close Rules" onclick="close_rules();" alt="Close Rules Button" />
+      </div>
+      <div class="popupcontent">
+        <p> How to Play: <br />
+          <br />Click on a square to change it's state <br />
+          <br />It will also change the states of the two adjacent <br />
+          <br /> They change in cycles. Red -> Green -> Blue -> Red <br />
+          <br />Get all 7 boxes in the blue state to win!
         </p>
+      </div>
+    </div>
+    <script>
+      // Initialize Variables
+      var closePopup = document.getElementById("popupclose");
+      var overlay = document.getElementById("overlay");
+      var popup = document.getElementById("popup");
+      // Close Popup Event
+      function close_rules() {
+        overlay.style.display = 'none';
+        popup.style.display = 'none';
+      };
 
-
-    </body>
-
+      function open_rules() {
+        overlay.style.display = 'block';
+        popup.style.display = 'block';
+      }
+      close_rules();
+    </script>
+    <div id="buttons">
+      <input id="b1" class="button" type="image" alt="Button 1" />
+      <input id="b2" class="button" type="image" alt="Button 2" />
+      <input id="b3" class="button" type="image" alt="Button 3" />
+      <input id="b4" class="button" type="image" alt="Button 4" />
+      <input id="b5" class="button" type="image" alt="Button 5" />
+      <input id="b6" class="button" type="image" alt="Button 6" />
+      <input id="b7" class="button" type="image" alt="Button 7" />
+    </div>
+    <script>
+      let msg = document.getElementById("listener");
+      document.addEventListener("keypress", (event) => {
+        if (parseInt(event.key) != NaN) {
+          var number = parseInt(event.key);
+          if (number >= 1 && number <= 7) {
+            change_state(number + 1);
+          }
+        }
+      });
+    </script>
+    <script src="blueport_main.js"></script>
+    <p id="credit">Markus Frigaard 2022</p>
+  </body>
 </html>
