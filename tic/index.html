@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Internet's Catalog</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script type="text/javascript">
+  const ebay_search1 = "https://www.ebay.ca/sch/i.html?_nkw=";
+  const ebay_search2 = "&ssPageName=GSTL";
+
+ const amazon_search1 = "https://www.amazon.com/search/s?k=";
+
+const  div_start = '<div class="result"><p><a href="';
+
+const div_end = '">Click here</a></p></div>';
+
+  function submit_search() {
+    var query_obj = document.getElementById("query").value;
+    document.getElementById("query").value = "";
+
+    var newhtml = [];
+
+    newhtml.push(div_start+ebay_search1 + query_obj + ebay_search2+div_end);
+    newhtml.push(div_start+amazon_search1 + query_obj+div_end);
+
+    var newstring = "";
+
+    for (var i = 0; i < newhtml.length; i++) {
+      newstring += newhtml[i];
+    }
+
+    document.getElementById("results").innerHTML = newstring;
+
+  }
+
+/*
+<div class="result"><p>
+</p></div>
+*/
+
+
+
+</script>
+</head>
+<body>
+
+<!-- The Nav Bar -->
+<div id="navbar">
+  <div id="sections">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+
+  </div>
+  <div id="logo">
+    <p>The Internet's Catalog</p>
+  </div>
+</div>
+
+<div id="query-space">
+  <input type="text" name="query" id="query">
+</div>
+<div id="submit-space">
+  <input type="button" name="submit" id="submit" value="Search" onclick="submit_search()">
+</div>
+<div id="results">
+
+</div>
+
+
+
+</body>
+</html>
