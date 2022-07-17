@@ -1,8 +1,5 @@
-
-
 body {
 	background-color: #323232;
-
 }
 
 #navbar {
@@ -16,17 +13,9 @@ body {
 	padding-bottom: 10px;
 	padding-left: 40px;
 	padding-right: 40px;
-
-
-
 	font-size: 20px;
-
 	text-align: center;
-
-
-
 	background-color: #232323;
-
 	text-decoration: none;
 	color: white;
 }
@@ -37,11 +26,8 @@ body {
 	padding-bottom: 45px;
 	padding-left: 50px;
 	padding-right: 50px;
-
 	text-align: center;
-
 	background-color: #232323;
-
 	text-decoration: none;
 	color: white;
 
@@ -56,24 +42,13 @@ body {
 	justify-content: left;
 }
 
-/*
-
-This next section is for the about me portion
-
-
-*/
 #About-Me {
-
 	margin-top: 200px;
 	margin-left: 28%;
 	margin-right: 15%;
 	display: flex;
-
 	justify-content: center;
-
-
 	background-color: #232323;
-
 	color: white;
 	text-align: center;
 	width: 800px;
@@ -87,7 +62,6 @@ This next section is for the about me portion
 .result {
 	display: flex;
 	justify-content: center;
-
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
