@@ -1,39 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>My Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Markus Frigaard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #1a1a1a;
+            color: #eaeaea;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #333;
+        }
+
+        .name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .menu a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+        .menu a:hover {
+            color: #ff7a00;
+        }
+
+        /* ===== LAYOUT ===== */
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 60px;
+            font-size: 1.3rem;
+            border-left: 3px solid #ff7a00;
+            padding-left: 10px;
+        }
+
+        p {
+            color: #bbb;
+            line-height: 1.6;
+        }
+
+        .bold {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        a {
+            color: #ff7a00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PROJECT BLOCK ===== */
+        .project {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #333;
+            border-radius: 6px;
+            position: relative;
+        }
+
+        /* subtle orange accent square */
+        .project::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            background: #ff7a00;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        /* ===== SMALL DECORATIVE LINE ===== */
+        .divider {
+            width: 40px;
+            height: 2px;
+            background: #ff7a00;
+            margin: 30px 0;
+        }
+
+        /* smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-    <header>
-        <div id="navbar">
-            <div id="projects_nav">
-                <a href="https://makusfrig.github.io/blueport/blueport.html">BLUEPORT</a>
-                <a href="https://chemplusplus.github.io/">CHEM++</a>
-                <a href="https://github.com/MakusFrig/Java_Chess/">JAVA CHESS</a>
-		<a href="https://makusfrig.github.io/tic/index.html">THE INTERNET CATALOG</a>
-            </div>
-        </div>
-    </header>
 <body>
-    <div id="intro">
-      <p>Markus Frigaard</p>
-      <p>A Portfolio</p>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="name">Markus Frigaard</div>
+        <div class="menu">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
     </div>
-    <div class="project" id="project1">
-      <img src="./img/blueport.png/" id="photo1" alt="Blueport by Markus Frigaard">
-      <p style="text-align: right">Blueport was a weekend project in the hopes of becoming familiar with the likes of JavaScript, HTML, and CSS. I learned how to use flex layouts, and how to automate processes on a website with JavaScript.<br><a href="https://makusfrig.github.io/blueport/blueport.html">Have a Look!</a>
-      </p>
+
+    <!-- CONTENT -->
+    <div class="container">
+
+        <!-- HERO -->
+        <h1>Markus Frigaard</h1>
+        <p class="bold">Hobby Coder / Mining Engineering Student</p>
+
+        <div class="divider"></div>
+
+        <!-- ABOUT -->
+        <h2 id="about">About</h2>
+        <p>
+            I'm a third year mining engineering student at UBC who has a hobby for programing and enjoys working with data and creating simulations.
+        </p>
+
+        <!-- PROJECTS -->
+        <h2 id="projects">Projects</h2>
+
+        <div class="project">
+            <p class="bold">Playoff-Simulation</p>
+            <p>Inspired by ESPN NFL Playoff Machine, this program takes a monte carlo approach to solving playoff probabilities for an NBA season</p>
+            <a href="https://github.com/MakusFrig/Playoff-Simulation">View Project</a>
+        </div>
+
+        <div class="project">
+            <p class="bold">Java Chess</p>
+            <p>When learning Java I challenged myself to make a gui chess game.</p>
+            <a href="https://github.com/MakusFrig/Java_Chess">View Project</a>
+        </div>
+
+        <div class="project">
+            <p class="bold">Chem++</p>
+            <p>While learning Chemistry a friend and I made a small python application that would help with calculations and pull important information</p>
+            <a href="https://chemplusplus.github.io/">View Project</a>
+        </div>
+
+        <!-- CONTACT -->
+        <h2 id="contact">Contact</h2>
+        <p>Email: markusfr@telus.net</p>
+        <p>
+            <a href="https://github.com/MakusFrig">GitHub</a> /
+            <a href="https://www.linkedin.com/in/markus-frigaard">LinkedIn</a>
+        </p>
+
     </div>
-    <div class="project" id="project2">
-      <p>Chem++ was an idea of mine to help automate some processes of studying chemistry as well as enhance my understanding of GUIs<br><a href="https://chemplusplus.github.io/">Have a Look!</a>
-      </p>
-      <img src="./img/chemplusplus.png/" id="photo2" alt="Chem++ by Markus Frigaard">
-    </div>
-    <div class="project" id="project3">
-      <img src="./img/javachess.png/" id="photo3" alt="Java Chess by Markus Frigaard">
-      <p>Java Chess was my exploration into a new language: Java. In this project, I recreated the game of chess, all the while learning about GUIs and crafting my own algorithms to scan the board for "checks" and such.<br><a href="https://github.com/MakusFrig/Java_Chess">Have a Look!</a>
-      </p>
-    </div>
+
+</body>
 </html>
