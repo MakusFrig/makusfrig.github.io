@@ -1,185 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Markus Frigaard</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #1a1a1a;
-            color: #eaeaea;
-        }
-
-        /* ===== NAVBAR ===== */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            border-bottom: 1px solid #333;
-        }
-
-        .name {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .menu a {
-            margin-left: 25px;
-            text-decoration: none;
-            color: #ccc;
-            font-size: 0.95rem;
-        }
-
-        .menu a:hover {
-            color: #ff7a00;
-        }
-
-        /* ===== LAYOUT ===== */
-        .container {
-            max-width: 800px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            margin-top: 60px;
-            font-size: 1.3rem;
-            border-left: 3px solid #ff7a00;
-            padding-left: 10px;
-        }
-
-        p {
-            color: #bbb;
-            line-height: 1.6;
-        }
-
-        .bold {
-            font-weight: bold;
-            color: #fff;
-        }
-
-        a {
-            color: #ff7a00;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* ===== PROJECT BLOCK ===== */
-        .project {
-            margin-top: 20px;
-            padding: 15px;
-            border: 1px solid #333;
-            border-radius: 6px;
-            position: relative;
-        }
-
-        /* subtle orange accent square */
-        .project::before {
-            content: "";
-            width: 6px;
-            height: 6px;
-            background: #ff7a00;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-        }
-
-        /* ===== SMALL DECORATIVE LINE ===== */
-        .divider {
-            width: 40px;
-            height: 2px;
-            background: #ff7a00;
-            margin: 30px 0;
-        }
-
-        /* smooth scroll */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+<title>Markus Frigaard - Projects</title>
 </head>
+
 <body>
 
-    <!-- NAVBAR -->
-    <div class="navbar">
-        <div class="name">Markus Frigaard</div>
-        <div class="menu">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
+<h1>Markus Frigaard</h1>
 
-    <!-- CONTENT -->
-    <div class="container">
+<p>
+<b>Mining Engineering Student</b><br>
+University of British Columbia
+</p>
 
-        <!-- HERO -->
-        <h1>Markus Frigaard</h1>
-        <p class="bold">Hobby Coder / Mining Engineering Student</p>
+<p>
+Last updated: July 2026
+</p>
 
-        <div class="divider"></div>
 
-        <!-- ABOUT -->
-        <h2 id="about">About</h2>
-        <p>
-            I'm a third year mining engineering student at UBC who has a hobby for programing and enjoys working with data and creating simulations.
-        </p>
+<p>
+<a href="#about">About</a> |
+<a href="#projects">Projects</a> |
+<a href="#languages">Languages</a> |
+<a href="#links">Links</a> |
+<a href="#contact">Contact</a>
+</p>
 
-        <!-- PROJECTS -->
-        <h2 id="projects">Projects</h2>
-        <div class="project">
-            <p class="bold">Plant++ (Complex Processing Plant Solver)</p>
-            <p>A project that uses monte-carlo like simulation in an error reducing algorithm to determine recovery curves of complex processing plants. Uses basic symbolic regression to define systems for future modelling.</p>
-            <a href="https://github.com/MakusFrig/Plantplusplus">View Project</a>
-        </div>
 
-        
-        <div class="project">
-            <p class="bold">Mortgage Affordability Calculator</p>
-            <p>A project that utilizes random walks with Canadian historical interest rates and wage increases to determine risk of future monthly payments exceeding a set percentage maximum of monthly salary</p>
-            <a href="https://github.com/MakusFrig/MortgageCalc">View Project</a>
-        </div>
+<hr>
 
-        
-        <div class="project">
-            <p class="bold">Playoff-Simulation</p>
-            <p>Inspired by ESPN NFL Playoff Machine, this program takes a monte carlo approach to solving playoff probabilities for an NBA season</p>
-            <a href="https://github.com/MakusFrig/Playoff-Simulation">View Project</a>
-        </div>
 
-        <div class="project">
-            <p class="bold">Java Chess</p>
-            <p>When learning Java I challenged myself to make a gui chess game.</p>
-            <a href="https://github.com/MakusFrig/Java_Chess">View Project</a>
-        </div>
+<h2 id="about">About</h2>
 
-        <div class="project">
-            <p class="bold">Chem++</p>
-            <p>While learning Chemistry a friend and I made a small python application that would help with calculations and pull important information</p>
-            <a href="https://chemplusplus.github.io/">View Project</a>
-        </div>
+<p>
+I am a third year mining engineering student at the University of British
+Columbia who enjoys programming, working with data, and creating simulations.
+</p>
 
-        <!-- CONTACT -->
-        <h2 id="contact">Contact</h2>
-        <p>Email: markusfr@telus.net</p>
-        <p>
-            <a href="https://github.com/MakusFrig">GitHub</a> /
-            <a href="https://www.linkedin.com/in/markus-frigaard">LinkedIn</a>
-        </p>
 
-    </div>
+<hr>
+
+
+<h2>Contents</h2>
+
+<ul>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#languages">Languages</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+
+<hr>
+
+
+<h2 id="projects">Projects</h2>
+
+
+<h3>Plant++</h3>
+
+<p>
+Plant++ is a complex processing plant solver designed to determine recovery
+curves of complex processing plants.
+</p>
+
+<p>
+The project uses Monte Carlo-like simulation in an error reducing algorithm
+to estimate plant behaviour. Symbolic regression methods are used to define
+systems for future modelling.
+</p>
+
+<p>
+<b>Language:</b> Python
+</p>
+
+<p>
+<a href="https://github.com/MakusFrig/Plantplusplus">
+View source code
+</a>
+</p>
+
+
+
+<h3>Mortgage Affordability Calculator</h3>
+
+<p>
+This project uses random walks with Canadian historical interest rates and
+wage increases to determine the risk of future monthly payments exceeding a
+set percentage maximum of monthly salary.
+</p>
+
+<p>
+<b>Language:</b> Python
+</p>
+
+<p>
+<a href="https://github.com/MakusFrig/MortgageCalc">
+View source code
+</a>
+</p>
+
+
+
+<h3>Playoff Simulation</h3>
+
+<p>
+Inspired by the ESPN NFL Playoff Machine, this program uses a Monte Carlo
+approach to estimate playoff probabilities for an NBA season.
+</p>
+
+<p>
+<b>Language:</b> Python
+</p>
+
+<p>
+<a href="https://github.com/MakusFrig/Playoff-Simulation">
+View source code
+</a>
+</p>
+
+
+
+<h3>Java Chess</h3>
+
+<p>
+A graphical chess application created while learning Java programming.
+</p>
+
+<p>
+<b>Language:</b> Java
+</p>
+
+<p>
+<a href="https://github.com/MakusFrig/Java_Chess">
+View source code
+</a>
+</p>
+
+
+
+<h3>Chem++</h3>
+
+<p>
+A small Python application created with a friend to assist with chemistry
+calculations and retrieve important information while learning chemistry.
+</p>
+
+<p>
+<b>Language:</b> Python
+</p>
+
+<p>
+<a href="https://chemplusplus.github.io/">
+Project page
+</a>
+</p>
+
+
+<hr>
+
+
+<h2 id="languages">Languages/Skills</h2>
+
+<ul>
+<li>Python</li>
+<li>Java</li>
+<li>Git</li>
+<li>Linux</li>
+<li>NumPy</li>
+<li>Scikit-learn</li>
+</ul>
+
+
+<hr>
+
+
+<h2 id="links">Links</h2>
+
+<ul>
+<li>
+<a href="https://github.com/MakusFrig">
+GitHub
+</a>
+</li>
+
+<li>
+<a href="https://www.linkedin.com/in/markus-frigaard">
+LinkedIn
+</a>
+</li>
+
+
+</ul>
+
+
+<hr>
+
+
+<h2 id="contact">Contact</h2>
+
+<p>
+Email:
+<a href="mailto:markusfr@telus.net">
+markusfr@telus.net
+</a>
+</p>
+
+
+<hr>
+
+
+<p>
+Last updated July 2026
+</p>
+
 
 </body>
+
 </html>
