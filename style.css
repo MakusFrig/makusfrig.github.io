@@ -1,0 +1,10 @@
+.project {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.project-image {
+    width: auto;
+    height: 250px;
+}
